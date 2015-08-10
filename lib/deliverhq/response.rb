@@ -9,6 +9,8 @@ module Deliverhq
       else
         raise RequestError, "Server responded with #{server_response.status}: #{server_response.body}"
       end
+    rescue JSON::ParserError
+      @body = server_response.body
     end
     
   end
