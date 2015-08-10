@@ -28,6 +28,7 @@ GEM
     minitest (5.8.0)
     multipart-post (2.0.0)
     netrc (0.10.3)
+    rake (10.4.2)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -58,6 +59,7 @@ DEPENDENCIES
   coveralls (~> 0.8)
   deliverhq!
   minitest (~> 5.3)
+  rake (~> 10.4)
   simplecov (~> 0.9)
   vcr (~> 2.8)
   webmock (~> 1.8)
