@@ -5,9 +5,9 @@ module Deliverhq
     
     def initialize(server_response)
       if server_response.status == 200
-        @body = JSON.parse(server_response.body)
+        @body = server_response.body.strip.length > 0 ? JSON.parse(server_response.body) : server_response.body
       else
-        raise "Server responded with #{server_response.status}: #{server_response.body}"
+        raise RequestError, "Server responded with #{server_response.status}: #{server_response.body}"
       end
     end
     
