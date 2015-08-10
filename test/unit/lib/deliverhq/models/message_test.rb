@@ -12,7 +12,7 @@ module Deliverhq
     end
     
     def test_find
-      Request::Message.stub(:get, @message_response, [1234]) do
+      Request::Message.stub(:get, @message_response) do
         assert_equal Message.find(1234).body, @message.body
       end
     end

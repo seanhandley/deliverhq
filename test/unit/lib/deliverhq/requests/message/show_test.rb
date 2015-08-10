@@ -12,7 +12,7 @@ module Deliverhq
       end
 
       def test_show
-        Base.stub :get, @response, [1234] do
+        Base.stub :get, @response do
           assert_equal 'foo', Request::Message.show(1234)['body']
         end
       end
