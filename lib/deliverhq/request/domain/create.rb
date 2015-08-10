@@ -4,8 +4,7 @@ module Deliverhq
   module Request
     class Domain < Base
       def self.create(params)
-        post('domain', *params)
-        true
+        post('domains', *params)
       end
     end
   end

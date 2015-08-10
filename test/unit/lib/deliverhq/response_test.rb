@@ -3,19 +3,23 @@ module Deliverhq
   
   class ResponseTest < Minitest::Test
     def setup
-      @response = OpenStruct.new(body: nil, headers: {})
+      @response = OpenStruct.new(status: 0, body: nil, headers: {})
     end
     
     def test_does_not_raise
-      @response.stub :body, {'status' => {'code' => 0, 'desc' => 'all fine'}}.to_json do
-        Response.new(@response)  
+      @response.stub :body, {'domain' =>{'name' => 'foo.com'}}.to_json do
+        @response.stub :status, 200 do
+          Response.new(@response)  
+        end
       end
     end
     
-    def test_raises_user_not_found
-      @response.stub :body, {'status' => {'code' => 205, 'desc' => 'User not found'}}.to_json do
-        assert_raises(Deliverhq::UserNotFoundError, 'User not found') do
-          Response.new(@response) 
+    def test_raises_error
+      @response.stub :body, 'Server error' do
+        @response.stub :status, 500 do
+          assert_raises(StandardError, 'User not found') do
+            Response.new(@response) 
+          end
         end
       end
     end

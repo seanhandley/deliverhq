@@ -12,6 +12,11 @@ module Deliverhq
         response = Response.new(conn.post(url, params))
         response.body
       end
+
+      def self.delete(url, params={})
+        response = Response.new(conn.delete(url, params))
+        response.body
+      end
       
       private
       
