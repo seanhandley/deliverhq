@@ -1,0 +1,238 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://foo:bar@api.deliverhq.com/api/mailboxes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 13:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 7db4361e51f5ac69b7aa94bc3522b46d
+      X-Runtime:
+      - '0.006738'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 13:30:46 GMT
+- request:
+    method: post
+    uri: https://foo:bar@api.deliverhq.com/api/mailboxes
+    body:
+      encoding: UTF-8
+      string: '{"name":"Incoming Support","check_spam":0,"destination_address":"http://app.sirportly.com/modules/deliver2/accept","destination_type":"http","domain_id":6707,"encoding":"post","format":"full","reply_stripping":false,"partial_address":"support"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 13:30:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"c524ec572570eb8095278c9cf08d208a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c2145e856a3998051daab7add3cf20df
+      X-Runtime:
+      - '0.025520'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: UTF-8
+      string: '{"account_id":506,"address":"support@datacentred.co.uk","backup_destination_address":null,"check_spam":0,"created_at":"2015-08-10T13:30:45Z","destination_address":"http://app.sirportly.com/modules/deliver2/accept","destination_type":"http","domain_id":6707,"encoding":"post","field_mapping":null,"format":"full","forwarding_token":"7b2xastjwxps10b3p967","id":16742,"name":"Incoming
+        Support","reply_stripping":false,"server_id":746,"updated_at":"2015-08-10T13:30:45Z","use_field_mapping":null,"partial_address":"support","domain":{"account_id":506,"id":6707,"name":"datacentred.co.uk","verification_token":"t7ka9k0j4m","verified_at":"2014-08-26T10:59:38Z"}}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 13:30:47 GMT
+- request:
+    method: get
+    uri: https://foo:bar@api.deliverhq.com/api/mailboxes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 13:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"83dd5040f2c5c464b1b855fca7b1e869"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - e3897e1e05ada09bc3e59735dfe81a80
+      X-Runtime:
+      - '0.032913'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '[{"account_id":506,"address":"support@datacentred.co.uk","backup_destination_address":null,"check_spam":0,"created_at":"2015-08-10T13:30:45Z","destination_address":"http://app.sirportly.com/modules/deliver2/accept","destination_type":"http","domain_id":6707,"encoding":"post","field_mapping":null,"format":"full","forwarding_token":"7b2xastjwxps10b3p967","id":16742,"name":"Incoming
+        Support","reply_stripping":false,"server_id":746,"updated_at":"2015-08-10T13:30:45Z","use_field_mapping":null,"partial_address":"support","domain":{"account_id":506,"id":6707,"name":"datacentred.co.uk","verification_token":"t7ka9k0j4m","verified_at":"2014-08-26T10:59:38Z"}}]'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 13:30:47 GMT
+- request:
+    method: delete
+    uri: https://foo:bar@api.deliverhq.com/api/mailboxes/16742
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 13:30:45 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a28197b0d9562c57d0a5472873470fc
+      X-Runtime:
+      - '0.015504'
+      X-Rack-Cache:
+      - invalidate, pass
+    body:
+      encoding: ASCII-8BIT
+      string: " "
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 13:30:47 GMT
+- request:
+    method: get
+    uri: https://foo:bar@api.deliverhq.com/api/mailboxes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 13:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 0d7b55377770df8d7640ec9301cacb77
+      X-Runtime:
+      - '0.009877'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 13:30:47 GMT
+recorded_with: VCR 2.9.3
