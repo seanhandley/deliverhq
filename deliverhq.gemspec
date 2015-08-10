@@ -23,7 +23,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'yard', '~> 0.8'
   gem.add_development_dependency 'coveralls', '~> 0.8'
 
-  # Gem Signing
-  gem.cert_chain  = ['certs/seanhandley.pem']
-  gem.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $0 =~ /gem\z/
 end
