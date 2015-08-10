@@ -18,4 +18,9 @@ module Deliverhq
   require_relative 'deliverhq/response'
 
   class RequestError < StandardError; end
+
+  def self.send(params)
+    response = Request::Base.post('send', params.to_json)
+    {'status': 'success', 'message_id': response.split(':').last.to_i}
+  end
 end
