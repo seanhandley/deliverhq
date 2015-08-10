@@ -10,6 +10,9 @@ require_relative '../lib/deliverhq'
 
 TEST_ENV = true
 
+ENV['DELIVERHQ_ID'] = 'foo'
+ENV['DELIVERHQ_KEY'] = 'bar'
+
 require 'rubygems'
 gem "minitest"
 require 'minitest/autorun'
