@@ -1,0 +1,142 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://foo:bar@api.deliverhq.com/api/messages/220376981
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 14:09:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"3b9baf4530cf3ce604ed4918b1756456"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 4e9f042e40ca357868337863413c9c3b
+      X-Runtime:
+      - '0.041753'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"id":220376981,"envelope_to":"kevin.deamandel@gmail.com","envelope_from":"noreply@datacentred.co.uk","subject":"Confirm
+        your account","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"body":"X-Deliver-Recipient:
+        kevin.deamandel@gmail.com\r\nReceived: from datacentred.co.uk (::ffff:46.101.4.39
+        [::ffff:46.101.4.39]) by deliver01.infra.atech.io with SMTP; Sat, 01 Aug 2015
+        20:41:03 +0100\r\nDate: Sat, 01 Aug 2015 20:41:03 +0100\r\nFrom: DataCentred
+        <noreply@datacentred.co.uk>\r\nTo: kevin.deamandel@gmail.com\r\nMessage-ID:
+        <55bd20cfa4299_362f3f9d37406e889767a@staging-my.datacentred.io.mail>\r\nSubject:
+        Confirm your account\r\nMime-Version: 1.0\r\nContent-Type: multipart/alternative;\r\n
+        boundary=\"--==_mimepart_55bd20cfa2c8c_362f3f9d37406e88975b3\";\r\n charset=UTF-8\r\nContent-Transfer-Encoding:
+        7bit\r\n\r\n\r\n----==_mimepart_55bd20cfa2c8c_362f3f9d37406e88975b3\r\nContent-Type:
+        text/plain;\r\n charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n*********************************\r\nPlease
+        confirm your email address\r\n*********************************\r\n\r\nWelcome
+        to your DataCentred account. Please click below to\r\nconfirm your signup.\r\n\r\nConfirm
+        Sign Up ( http://staging-my.datacentred.io/signup/c646e61e15d075e=\r\n7b1bfa9347455ac94
+        )\r\n\r\n---------------------\r\nWhy am I seeing this?\r\n---------------------\r\n\r\nYou''ve
+        been sent this email because you''ve either signed up for\r\na Cloud Services
+        account with DataCentred, or you''ve been invited\r\nas an additional user
+        to an existing account.\r\n\r\n---------------\r\nGetting Started\r\n---------------\r\n\r\n*
+        Your dashboard can be found at my.datacentred.io ( https://my.datacentr=\r\ned.io
+        ) - from here, you can view your cloud\r\nusage information, raise support
+        tickets, invite other users, and\r\nhandle your account settings.\r\n* Our
+        documentation can be found at docs.datacentred.io ( http://docs.dat=\r\nacentred.io
+        ) and contains various articles and\r\ntutorials on common topics and frequently
+        asked questions.\r\n* The OpenStack control panel can be found at\r\ncompute.datacentred.io
+        ( https://compute.datacentred.io ) and\r\nallows you to create and manage
+        instances, volumes, images and\r\nvirtual networking hardware. You can log
+        into this using the same\r\nemail address and password you set up with My
+        DataCentred.\r\n\r\nThe above setup link will expire at 08:41PM BST on Saturday\r\nAugust
+        8th 2015. If you have any issues accessing your account,\r\nplease contact
+        support@datacentred.co.uk (\r\nsupport@datacentred.co.uk ).\r\n\r\nIf you
+        requre any assistance, please log into my.datacentred.io\r\n( https://my.datacentred.io
+        ) and raise a ticket in the Support\r\nsection.\r\n\r\nKind regards,\r\n\r\nThe
+        DataCentred Team\r\n\r\ndatacentred.co.uk ( http://www.datacentred.co.uk )\r\n\r\n=C2=A9
+        DataCentred Ltd 2015=\r\n\r\n----==_mimepart_55bd20cfa2c8c_362f3f9d37406e88975b3\r\nContent-Type:
+        text/html;\r\n charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<!DOCTYPE
+        html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www=\r\n.w3.org/TR/REC-html40/loose.dtd\">\r\n<html>\r\n<head>\r\n<meta
+        http-equiv=3D\"Content-Type\" content=3D\"text/html; charset=3DUTF-8\">=\r\n\r\n\r\n</head>\r\n<body
+        style=3D\"height: 100%\">\r\n<style type=3D\"text/css\">\r\nbody {\r\nheight:
+        100%;\r\n}\r\ndiv.container#email a.confirm:hover {\r\nbackground: #74C8EA
+        !important;\r\n}\r\ndiv.container#email a.confirm:active {\r\nbackground:
+        #74C8EA !important;\r\n}\r\n</style>\r\n<div class=3D\"container\" id=3D\"email\"
+        style=3D\"background: #fafafa; borde=\r\nr-radius: 5px; color: #000 !important;
+        font-family: ''Helvetica Neue'', Hel=\r\nvetica, Arial, sans-serif; font-size:
+        14px; margin: 40px auto 10px; paddi=\r\nng: 20px; text-shadow: none !important;
+        width: 85%\">\r\n  <div class=3D\"pull-right\" style=3D\"float: right !important\"><img
+        class=3D=\r\n\"logo_email\" alt=3D\"\" src=3D\"/assets/DC_Mono_B-4b3e3fa99dbebc4b57a6050c67=\r\necd2a7.png\"
+        style=3D\"height: auto; margin-bottom: 15px; width: 150px\"></d=\r\niv>\r\n<div
+        class=3D\"push\" style=3D\"height: 60px\"></div>\r\n\r\n  <h1 style=3D\"font-size:
+        30px; font-weight: lighter\">Please confirm your=\r\n email address</h1>\r\n\r\n  <p
+        style=3D\"-webkit-font-smoothing: antialiased; font-weight: 200\">Welc=\r\nome
+        to your DataCentred account. Please click below to confirm your signu=\r\np.</p>\r\n  =\r\n\r\n  <div
+        style:>\r\n    <a class=3D\"confirm\" target=3D\"_blank\" href=3D\"http://staging-my.data=\r\ncentred.io/signup/c646e61e15d075e7b1bfa9347455ac94\"
+        style=3D\"background: =\r\n#1a76bc; border-radius: 3px; color: #ffffff; display:
+        block; font-size: 1=\r\n8px; line-height: 62px; margin: 30px auto; min-height:
+        60px; min-width: 2=\r\n00px; padding-left: 5px; padding-right: 5px; text-align:
+        center; text-dec=\r\noration: none; width: 35%\">Confirm Sign Up</a>\r\n  </div>\r\n\r\n  <h2
+        style=3D\"color: #666; font-size: 25px; font-weight: lighter\">Why am=\r\n
+        I seeing this?</h2>\r\n\r\n  <p style=3D\"-webkit-font-smoothing: antialiased;
+        font-weight: 200\">You''=\r\nve been sent this email because you''ve either
+        signed up for a Cloud Servi=\r\nces account with DataCentred, or you''ve been
+        invited as an additional use=\r\nr to an existing account.</p>\r\n    =\r\n\r\n  <h2
+        style=3D\"color: #666; font-size: 25px; font-weight: lighter\">Gettin=\r\ng
+        Started</h2>\r\n\r\n  <ul>\r\n    <li style=3D\"-webkit-font-smoothing: antialiased;
+        font-weight: 200\">Y=\r\nour dashboard can be found at <a href=3D\"https://my.datacentred.io\"
+        style=\r\n=3D\"text-decoration: none\">my.datacentred.io</a> - from here,
+        you can vie=\r\nw your cloud usage information, raise support tickets, invite
+        other users=\r\n, and handle your account settings.</li>\r\n    <li style=3D\"-webkit-font-smoothing:
+        antialiased; font-weight: 200\">O=\r\nur documentation can be found at <a
+        href=3D\"http://docs.datacentred.io\" s=\r\ntyle=3D\"text-decoration: none\">docs.datacentred.io</a>
+        and contains vario=\r\nus articles and tutorials on common topics and frequently
+        asked questions=\r\n.</li>\r\n    <li style=3D\"-webkit-font-smoothing: antialiased;
+        font-weight: 200\">T=\r\nhe OpenStack control panel can be found at <a href=3D\"https://compute.dat=\r\nacentred.io\"
+        style=3D\"text-decoration: none\">compute.datacentred.io</a> a=\r\nnd allows
+        you to create and manage instances, volumes, images and virtual=\r\n networking
+        hardware. You can log into this using the same email address =\r\nand password
+        you set up with My DataCentred.</li>\r\n  </ul>\r\n\r\n  <p style=3D\"-webkit-font-smoothing:
+        antialiased; font-weight: 200\">The =\r\nabove setup link will expire at 08:41PM
+        BST on Saturday August 8th 2015. =\r\nIf you have any issues accessing your
+        account, please contact <a href=3D\"=\r\nmailto:support@datacentred.co.uk\"
+        style=3D\"text-decoration: none\">support=\r\n@datacentred.co.uk</a>.</p>\r\n\r\n  <p
+        style=3D\"-webkit-font-smoothing: antialiased; font-weight: 200\">If y=\r\nou
+        requre any assistance, please log into <a href=3D\"https://my.datacentr=\r\ned.io\"
+        style=3D\"text-decoration: none\">my.datacentred.io</a> and raise a =\r\nticket
+        in the Support section.</p>\r\n\r\n  <p style=3D\"-webkit-font-smoothing:
+        antialiased; font-weight: 200\">Kind=\r\n regards,<br>\r\n  The DataCentred
+        Team</p>\r\n</div>\r\n<div class=3D\"footer\" id=3D\"email\" style=3D\"color:
+        #000 !important; font-=\r\nfamily: ''Helvetica Neue'', Helvetica, Arial, sans-serif;
+        font-size: 14px; =\r\nmargin-left: auto; margin-right: auto; width: 85%\">\r\n  <div
+        class=3D\"pull-right\" style=3D\"float: right !important\">\r\n    <p style=3D\"font-size:
+        9px; margin: 0px\"><a href=3D\"http://www.datace=\r\nntred.co.uk\" target=3D\"_blank\"
+        style=3D\"text-decoration: none\">datacentre=\r\nd.co.uk</a></p>\r\n  </div>\r\n  <p
+        style=3D\"font-size: 9px; margin: 0px\">=C2=A9 DataCentred Ltd 2015</p=\r\n>\r\n</div>\r\n<div
+        class=3D\"push\" style=3D\"height: 60px\"></div>\r\n</body>\r\n</html>\r\n\r\n----==_mimepart_55bd20cfa2c8c_362f3f9d37406e88975b3--\r\n","bounce_body":null,"spam":null,"address_identifier":null,"body_to":"kevin.deamandel@gmail.com","body_from":"noreply@datacentred.co.uk"}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 14:09:44 GMT
+recorded_with: VCR 2.9.3

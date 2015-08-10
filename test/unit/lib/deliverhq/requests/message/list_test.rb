@@ -5,10 +5,10 @@ module Deliverhq
     class MessageListTest < Minitest::Test
 
       def setup
-        @response = [{
+        @response = {'records' => [{
             'id' => 1234,
             'body' => 'foo'
-          }]
+          }]}
       end
 
       def test_list

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://yvnkigkbn5:7y7qh820t4@api.deliverhq.com/api/messages?page=1
+    uri: https://foo:bar@api.deliverhq.com/api/messages?page=1
     body:
       encoding: US-ASCII
       string: ''

@@ -18,7 +18,7 @@ module Deliverhq
     end
 
     def test_all
-      Request::Message.stub(:get, [@message_response]) do
+      Request::Message.stub(:get, {'records' => [@message_response]}) do
         assert_equal Message.all.first.id, @message.id
       end
     end

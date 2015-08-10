@@ -13,6 +13,12 @@ module Deliverhq
         assert_equal 4, Message.all.count
       end
     end
+
+    def test_show_message
+      VCR.use_cassette('messages_show') do
+        assert_equal "kevin.deamandel@gmail.com", Message.find(220376981).envelope_to
+      end
+    end
   
   end
 end
