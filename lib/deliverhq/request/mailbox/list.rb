@@ -1,4 +1,4 @@
-# GET /domains
+# GET /mailboxes
 module Deliverhq
   module Request
     class Mailbox < Base

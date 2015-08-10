@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://yvnkigkbn5:7y7qh820t4@api.deliverhq.com/api/messages?page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Mon, 10 Aug 2015 14:02:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"064468f69318c5577625c94ec165317a"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 94b69bb33da48d0547f504ab290496ac
+      X-Runtime:
+      - '0.057177'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: '{"records":[{"id":220376981,"envelope_to":"kevin.deamandel@gmail.com","envelope_from":"noreply@datacentred.co.uk","subject":"Confirm
+        your account","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"spam":null,"address_identifier":null,"body_to":"kevin.deamandel@gmail.com","body_from":"noreply@datacentred.co.uk"},{"id":220376903,"envelope_to":"kevin@145.be","envelope_from":"noreply@datacentred.co.uk","subject":"Confirm
+        your account","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"spam":null,"address_identifier":null,"body_to":"kevin@145.be","body_from":"noreply@datacentred.co.uk"},{"id":220376897,"envelope_to":"kevin@145.be","envelope_from":"noreply@datacentred.co.uk","subject":"Confirm
+        your account","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"spam":null,"address_identifier":null,"body_to":"kevin@145.be","body_from":"noreply@datacentred.co.uk"},{"id":220376801,"envelope_to":"kevin@145.be","envelope_from":"noreply@datacentred.co.uk","subject":"Confirm
+        your account","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"spam":null,"address_identifier":null,"body_to":"kevin@145.be","body_from":"noreply@datacentred.co.uk"}],"pagination":{"page":1,"per_page":100,"pages":1,"total_records":4}}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 14:02:13 GMT
+recorded_with: VCR 2.9.3

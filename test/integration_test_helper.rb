@@ -1,7 +1,7 @@
 require 'vcr'
 
-ENV['DELIVERHQ_ID'] = 'foo'
-ENV['DELIVERHQ_KEY'] = 'bar'
+# ENV['DELIVERHQ_ID'] = 'foo'
+# ENV['DELIVERHQ_KEY'] = 'bar'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'test/vcr_cassettes'
