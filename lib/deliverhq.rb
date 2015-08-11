@@ -21,6 +21,7 @@ module Deliverhq
 
   def self.send(params)
     response = Request::Base.post('send', params.to_json)
-    {'status': 'success', 'message_id': response.split(':').last.to_i}
+    message_id = response.split(':').last.to_i
+    Message.find(message_id)
   end
 end
