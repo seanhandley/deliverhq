@@ -29,8 +29,8 @@ module Deliverhq
       new(Request::Message.show(id))
     end
 
-    def self.all
-      Request::Message.list.collect do |message|
+    def self.all(page=1)
+      Request::Message.list(page).collect do |message|
         new message
       end
     end
