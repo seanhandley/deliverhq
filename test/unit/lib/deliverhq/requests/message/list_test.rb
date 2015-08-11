@@ -12,7 +12,7 @@ module Deliverhq
       end
 
       def test_list
-        Base.stub :get, @message_list_response, ["messages", {page: 1}] do
+        Deliverhq::Request::Base.stub :http_get, @message_list_response, ["messages", {page: 1}] do
           assert_equal 1, Request::Message.list(1).count
         end
       end

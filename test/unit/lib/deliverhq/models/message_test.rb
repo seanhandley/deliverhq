@@ -12,13 +12,13 @@ module Deliverhq
     end
     
     def test_find
-      Request::Message.stub(:get, @message_response) do
+      Request::Message.stub(:show, @message_response) do
         assert_equal Message.find(1234).body, @message.body
       end
     end
 
     def test_all
-      Request::Message.stub(:get, {'records' => [@message_response]}) do
+      Request::Message.stub(:list, [@message_response]) do
         assert_equal Message.all.first.id, @message.id
       end
     end

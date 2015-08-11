@@ -3,7 +3,7 @@ module Deliverhq
   module Request
     class Mailbox < Base
       def self.destroy(id)
-        delete("mailboxes/#{id}")
+        http_delete("mailboxes/#{id}")
         true
       end
     end

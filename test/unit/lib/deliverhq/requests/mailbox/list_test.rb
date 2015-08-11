@@ -11,7 +11,7 @@ module Deliverhq
       end
 
       def test_list
-        Base.stub :get, @mailbox_list_response, ["mailboxes"] do
+        Deliverhq::Request::Base.stub :http_get, @mailbox_list_response, ["mailboxes"] do
           assert_equal 1, Request::Mailbox.list.count
         end
       end

@@ -3,7 +3,7 @@ module Deliverhq
   module Request
     class Domain < Base
       def self.destroy(id)
-        delete("domains/#{id}")
+        http_delete("domains/#{id}")
         true
       end
     end

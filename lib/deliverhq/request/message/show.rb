@@ -3,7 +3,7 @@ module Deliverhq
   module Request
     class Message < Base
       def self.show(id)
-        get("messages/#{id}")
+        http_get("messages/#{id}")
       end
     end
   end

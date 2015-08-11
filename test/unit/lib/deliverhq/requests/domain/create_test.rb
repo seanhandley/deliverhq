@@ -16,7 +16,7 @@ module Deliverhq
       end
 
       def test_create_returns_domain
-        Base.stub :post, @domain_create_response, ["domains", @params.to_json] do
+        Deliverhq::Request::Base.stub :http_post, @domain_create_response, ["domains", @params.to_json] do
           assert_equal 1234, Request::Domain.create(@params)['id']
         end
       end

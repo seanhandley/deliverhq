@@ -15,7 +15,7 @@ module Deliverhq
       end
 
       def test_list
-        Base.stub :get, @domain_list_response, ["domains"] do
+        Deliverhq::Request::Base.stub :http_get, @domain_list_response, ["domains"] do
           assert_equal 1, Request::Domain.list.count
         end
       end

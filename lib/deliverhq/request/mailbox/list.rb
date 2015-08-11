@@ -3,7 +3,7 @@ module Deliverhq
   module Request
     class Mailbox < Base
       def self.list
-        get('mailboxes')
+        http_get('mailboxes')
       end
     end
   end

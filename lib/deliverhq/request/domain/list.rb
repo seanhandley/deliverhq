@@ -3,7 +3,7 @@ module Deliverhq
   module Request
     class Domain < Base
       def self.list
-        get('domains')
+        http_get('domains')
       end
     end
   end

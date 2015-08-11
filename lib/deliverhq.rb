@@ -26,7 +26,7 @@ module Deliverhq
   class RequestError < StandardError; end
 
   def self.send(params)
-    response = Request::Base.post('send', params.to_json)
+    response = Request::Base.http_post('send', params.to_json)
     message_id = response.split(':').last.to_i
     Message.find(message_id)
   end

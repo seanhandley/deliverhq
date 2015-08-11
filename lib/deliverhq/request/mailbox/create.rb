@@ -12,7 +12,7 @@ module Deliverhq
   module Request
     class Mailbox < Base
       def self.create(params)
-        post('mailboxes', params.to_json)
+        http_post('mailboxes', params.to_json)
       end
     end
   end

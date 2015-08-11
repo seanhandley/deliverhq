@@ -13,7 +13,7 @@ module Deliverhq
         Base.stub :conn, @conn do
           @conn.stub :get, nil do
             Deliverhq::Response.stub :new, @response do
-              assert Base.get('foo', {})
+              assert Base.http_get('foo', {})
             end
           end
         end
@@ -24,7 +24,7 @@ module Deliverhq
         @mock.expect(:get, @response, ['foo', { 'bar' => 'baz'}])
         Base.stub :conn, @mock do
           Deliverhq::Response.stub :new, @response do
-            Base.get('foo', 'bar' => 'baz')
+            Base.http_get('foo', 'bar' => 'baz')
           end
         end
         @mock.verify
@@ -34,7 +34,7 @@ module Deliverhq
         Base.stub :conn, @conn do
           @conn.stub :post, nil do
             Deliverhq::Response.stub :new, @response do
-              assert Base.post('foo', {})
+              assert Base.http_post('foo', {})
             end
           end
         end
@@ -45,7 +45,7 @@ module Deliverhq
         @mock.expect(:post, @response, ['foo', { 'bar' => 'baz'}])
         Base.stub :conn, @mock do
           Deliverhq::Response.stub :new, @response do
-            Base.post('foo', 'bar' => 'baz')
+            Base.http_post('foo', 'bar' => 'baz')
           end
         end
         @mock.verify

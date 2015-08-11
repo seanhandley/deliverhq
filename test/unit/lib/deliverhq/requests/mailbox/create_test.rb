@@ -14,7 +14,7 @@ module Deliverhq
       end
 
       def test_create_returns_mailbox
-        Base.stub :post, @mailbox_create_response, ["mailboxes", @mailbox_create_params.to_json] do
+        Deliverhq::Request::Base.stub :http_post, @mailbox_create_response, ["mailboxes", @mailbox_create_params.to_json] do
           assert_equal 1234, Request::Mailbox.create(@mailbox_create_params)['id']
         end
       end

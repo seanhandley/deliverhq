@@ -9,7 +9,7 @@ module Deliverhq
       end
 
       def test_destroy_returns_true
-        Base.stub :delete, @mailbox_destroy_response, ["mailboxes/1234"] do
+        Deliverhq::Request::Base.stub :http_delete, @mailbox_destroy_response, ["mailboxes/1234"] do
           assert Request::Mailbox.destroy(1234)
         end
       end
