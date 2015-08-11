@@ -5,7 +5,7 @@ module Deliverhq
     class DomainListTest < Minitest::Test
 
       def setup
-        @response = [{
+        @domain_list_response = [{
             'account_id' => 1,
             'name' => 'foo.com',
             'id' => 1234,
@@ -15,7 +15,7 @@ module Deliverhq
       end
 
       def test_list
-        Base.stub :get, @response do
+        Base.stub :get, @domain_list_response, ["domains"] do
           assert_equal 1, Request::Domain.list.count
         end
       end

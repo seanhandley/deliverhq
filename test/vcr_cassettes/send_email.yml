@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx/1.4.1
       Date:
-      - Mon, 10 Aug 2015 14:34:57 GMT
+      - Tue, 11 Aug 2015 08:59:27 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -35,19 +35,19 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e6a9cc418e34d47f50705f0c2e2e1c00
+      - 9d6e0603d2c36062d1f5908cf3ec734e
       X-Runtime:
-      - '0.026336'
+      - '0.028876'
       X-Rack-Cache:
       - invalidate, pass
     body:
       encoding: ASCII-8BIT
-      string: Message sent successfully. Identifier:222498860
+      string: Message sent successfully. Identifier:222703961
     http_version: 
-  recorded_at: Mon, 10 Aug 2015 14:34:55 GMT
+  recorded_at: Tue, 11 Aug 2015 08:59:28 GMT
 - request:
     method: get
-    uri: https://foo:bar@api.deliverhq.com/api/messages/222498860
+    uri: https://foo:bar@api.deliverhq.com/api/messages/222703961
     body:
       encoding: US-ASCII
       string: ''
@@ -68,7 +68,7 @@ http_interactions:
       Server:
       - nginx/1.4.1
       Date:
-      - Mon, 10 Aug 2015 14:34:55 GMT
+      - Tue, 11 Aug 2015 08:59:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -78,22 +78,22 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"b0662cb1bc52713a199bb5c0a1ccd3fe"'
+      - '"67cd95783b021650acc2fa0d52e530ed"'
       Cache-Control:
       - must-revalidate, private, max-age=0
       X-Request-Id:
-      - 74a40e071e48140dcb45ae5d2d8d2cdf
+      - 9c77134db62b90d6b3ed4d10950de2f6
       X-Runtime:
-      - '0.008177'
+      - '0.010581'
       X-Rack-Cache:
       - miss
     body:
       encoding: UTF-8
-      string: '{"id":222497936,"envelope_to":"test@test.com","envelope_from":"foo@datacentred.co.uk","subject":"Foo","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"body":"Date:
-        Mon, 10 Aug 2015 15:32:03 +0100\r\nFrom: foo@datacentred.co.uk\r\nTo: test@test.com\r\nMessage-ID:
-        <55c8b5e351f19_311143207845951c@deliver01.mail>\r\nSubject: Foo\r\nMime-Version:
+      string: '{"id":222703961,"envelope_to":"test@test.com","envelope_from":"foo@datacentred.co.uk","subject":"Foo","status":"held","error":null,"server_id":746,"mailbox_id":null,"status_code":null,"body":"Date:
+        Tue, 11 Aug 2015 09:59:27 +0100\r\nFrom: foo@datacentred.co.uk\r\nTo: test@test.com\r\nMessage-ID:
+        <55c9b96fba5a3_30e143207851103c@deliver01.mail>\r\nSubject: Foo\r\nMime-Version:
         1.0\r\nContent-Type: text/plain;\r\n charset=UTF-8\r\nContent-Transfer-Encoding:
         7bit\r\n\r\nBar","bounce_body":null,"spam":null,"address_identifier":null,"body_to":"test@test.com","body_from":"foo@datacentred.co.uk"}'
     http_version: 
-  recorded_at: Mon, 10 Aug 2015 14:34:55 GMT
+  recorded_at: Tue, 11 Aug 2015 08:59:28 GMT
 recorded_with: VCR 2.9.3

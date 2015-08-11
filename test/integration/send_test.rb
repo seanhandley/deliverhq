@@ -12,9 +12,7 @@ module Deliverhq
     
     def test_send_email
       VCR.use_cassette('send_email') do
-        response = Deliverhq.send(@params)
-        assert_equal 222498860, response[:message_id]
-        message = Deliverhq::Message.find(222498860)
+        message = Deliverhq.send(@params)
         assert message.body.include?(@params[:plain_body])
       end
     end

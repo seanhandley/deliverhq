@@ -5,11 +5,11 @@ module Deliverhq
     class DomainDestroyTest < Minitest::Test
 
       def setup
-        @response = " "
+        @domain_destroy_response = " "
       end
 
       def test_destroy_returns_true
-        Base.stub :delete, @response do
+        Base.stub :delete, @domain_destroy_response, ["domains/1234"] do
           assert Request::Domain.destroy(1234)
         end
       end

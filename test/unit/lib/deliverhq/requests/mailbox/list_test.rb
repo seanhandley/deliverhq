@@ -5,13 +5,13 @@ module Deliverhq
     class MailboxListTest < Minitest::Test
 
       def setup
-        @response = [{
+        @mailbox_list_response = [{
             'name' => 'foo'
           }]
       end
 
       def test_list
-        Base.stub :get, @response do
+        Base.stub :get, @mailbox_list_response, ["mailboxes"] do
           assert_equal 1, Request::Mailbox.list.count
         end
       end

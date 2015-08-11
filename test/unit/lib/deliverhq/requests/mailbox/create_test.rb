@@ -5,17 +5,17 @@ module Deliverhq
     class MailboxCreateTest < Minitest::Test
 
       def setup
-        @mailbox_params = {
+        @mailbox_create_params = {
           'name' => 'foo'
         }
-        @response = {
+        @mailbox_create_response = {
           'id' => 1234
         }
       end
 
       def test_create_returns_mailbox
-        Base.stub :post, @response do
-          assert_equal 1234, Request::Mailbox.create(@mailbox_params)['id']
+        Base.stub :post, @mailbox_create_response, ["mailboxes", @mailbox_create_params.to_json] do
+          assert_equal 1234, Request::Mailbox.create(@mailbox_create_params)['id']
         end
       end
       

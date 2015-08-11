@@ -5,7 +5,8 @@ module Deliverhq
     class DomainCreateTest < Minitest::Test
 
       def setup
-        @response = {
+        @params = {name: 'foo.com'}
+        @domain_create_response = {
             'account_id' => 1,
             'name' => 'foo.com',
             'id' => 1234,
@@ -15,8 +16,8 @@ module Deliverhq
       end
 
       def test_create_returns_domain
-        Base.stub :post, @response do
-          assert_equal 1234, Request::Domain.create(name: 'foo.com')['id']
+        Base.stub :post, @domain_create_response, ["domains", @params.to_json] do
+          assert_equal 1234, Request::Domain.create(@params)['id']
         end
       end
       
