@@ -17,6 +17,8 @@ module Deliverhq
 
   require_relative 'deliverhq/request/message/list'
   require_relative 'deliverhq/request/message/show'
+
+  require_relative 'deliverhq/models/model_base'
   
   require_relative 'deliverhq/models/domain'
   require_relative 'deliverhq/models/mailbox'
