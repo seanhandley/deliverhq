@@ -9,7 +9,7 @@ module Deliverhq
         @response = OpenStruct.new(body: true)
       end
 
-      def test_get_returns_keybase_response
+      def test_get_returns_deliverhq_response
         Base.stub :conn, @conn do
           @conn.stub :get, nil do
             Deliverhq::Response.stub :new, @response do
@@ -30,7 +30,7 @@ module Deliverhq
         @mock.verify
       end
 
-      def test_post_returns_keybase_response
+      def test_post_returns_deliverhq_response
         Base.stub :conn, @conn do
           @conn.stub :post, nil do
             Deliverhq::Response.stub :new, @response do
